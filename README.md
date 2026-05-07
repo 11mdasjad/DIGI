@@ -1,70 +1,149 @@
-# Getting Started with Create React App
+# DIGI Chemicals & Electronics - Premium Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A futuristic, premium, highly animated 3D business website for DIGI Chemicals & Electronics.
 
-## Available Scripts
+## 🎨 Features
 
-In the project directory, you can run:
+- **Modern Design**: Dark theme with red neon accents and glassmorphism effects
+- **3D Animations**: Smooth animations using Framer Motion and Three.js
+- **Responsive**: Fully responsive design for mobile and desktop
+- **Interactive**: Custom cursor, floating particles, and hover effects
+- **Premium UI**: Apple-level clean UI with Tesla-inspired animations
+- **Product Showcase**: 16 premium cleaning and chemical products
+- **WhatsApp Integration**: Direct ordering via WhatsApp
+- **SEO Optimized**: Fast loading with optimized performance
 
-### `npm start`
+## 🚀 Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React.js
+- Tailwind CSS
+- Framer Motion (animations)
+- Three.js (@react-three/fiber, @react-three/drei)
+- React Router DOM
+- React Icons
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📦 Installation
 
-### `npm test`
+1. Navigate to the project directory:
+```bash
+cd digi-chemicals
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Install dependencies:
+```bash
+npm install
+```
 
-### `npm run build`
+3. Start the development server:
+```bash
+npm start
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🏢 Company Details
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**Company Name:** DIGI Chemicals & Electronics
 
-### `npm run eject`
+**Tagline:** Deals in All Types of Chemical & Electronic Items
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Contact:**
+- Phone: +91 7840000893
+- Email: Degi20035@gmail.com
+- Address: 3366-3700 1st Floor, Sita Ram Bazar, Delhi - 110006
+- GST Number: 070GVPS6503K1ZB
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📱 Features Included
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Homepage
+- Animated hero section with 3D elements
+- Floating product showcase
+- Animated statistics counter
+- Premium call-to-action buttons
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Products Section
+- 16 premium products with 3D cards
+- Category filtering
+- Search functionality
+- Hover animations and effects
+- Direct WhatsApp ordering
 
-## Learn More
+### Product Categories
+- Floor Cleaners
+- Toilet Cleaners
+- Bathroom Products
+- Hand Wash
+- Glass Cleaners
+- Multipurpose Cleaners
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Additional Sections
+- Features showcase
+- Customer testimonials with auto-slider
+- FAQ accordion
+- Contact information
+- Floating WhatsApp button
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Animations
+- Custom cursor animation
+- Floating particles background
+- 3D product rotations
+- Smooth page transitions
+- Hover lift effects
+- Neon glow effects
+- Glassmorphism cards
 
-### Code Splitting
+## 🎯 Build for Production
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+npm run build
+```
 
-### Analyzing the Bundle Size
+This creates an optimized production build in the `build` folder.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 📄 Project Structure
 
-### Making a Progressive Web App
+```
+digi-chemicals/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── CustomCursor.js
+│   │   ├── FAQ.js
+│   │   ├── Features.js
+│   │   ├── Footer.js
+│   │   ├── Hero.js
+│   │   ├── LoadingScreen.js
+│   │   ├── Navbar.js
+│   │   ├── ParticlesBackground.js
+│   │   ├── ProductDetail.js
+│   │   ├── Products.js
+│   │   ├── Stats.js
+│   │   ├── Testimonials.js
+│   │   └── WhatsAppButton.js
+│   ├── data/
+│   │   └── products.js
+│   ├── App.js
+│   ├── index.css
+│   └── index.js
+├── tailwind.config.js
+├── postcss.config.js
+└── package.json
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🎨 Design Inspiration
 
-### Advanced Configuration
+- Apple (clean UI)
+- Tesla (smooth animations)
+- Stripe (premium feel)
+- Notion (modern design)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 📞 Support
 
-### Deployment
+For any queries or support, contact:
+- Phone: +91 7840000893
+- Email: Degi20035@gmail.com
+- WhatsApp: [Click here](https://wa.me/917840000893)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 📝 License
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+© 2026 DIGI Chemicals & Electronics. All rights reserved.
