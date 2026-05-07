@@ -63,16 +63,24 @@ const ProductDetail = () => {
             <motion.div
               animate={{
                 y: [0, -20, 0],
-                rotateY: [0, 360],
               }}
               transition={{
                 duration: 6,
                 repeat: Infinity,
                 ease: 'easeInOut',
               }}
-              className="text-[200px]"
+              className="w-full flex items-center justify-center"
             >
-              {product.image}
+              <img
+                src={product.image}
+                alt={product.name}
+                className="w-full max-w-md mx-auto object-contain max-h-96"
+                onError={(e) => {
+                  e.target.style.display = 'none';
+                  e.target.parentElement.querySelector('.emoji-fallback').style.display = 'flex';
+                }}
+              />
+              <div className="emoji-fallback text-[200px] text-center hidden items-center justify-center">{product.imageEmoji}</div>
             </motion.div>
           </motion.div>
 
@@ -240,7 +248,18 @@ const ProductDetail = () => {
                   to={`/product/${relatedProduct.id}`}
                   className="glass-card rounded-2xl p-6 hover-lift-luxury"
                 >
-                  <div className="text-6xl text-center mb-4">{relatedProduct.image}</div>
+                  <div className="h-32 flex items-center justify-center mb-4">
+                    <img
+                      src={relatedProduct.image}
+                      alt={relatedProduct.name}
+                      className="max-w-full max-h-full object-contain"
+                      onError={(e) => {
+                        e.target.style.display = 'none';
+                        e.target.nextSibling.style.display = 'flex';
+                      }}
+                    />
+                    <div className="text-6xl text-center hidden items-center justify-center">{relatedProduct.imageEmoji}</div>
+                  </div>
                   <h3 className="text-lg font-bold text-gray-800 mb-2">
                     {relatedProduct.name}
                   </h3>

@@ -91,9 +91,18 @@ const CartSidebar = () => {
                         <Link
                           to={`/product/${item.id}`}
                           onClick={() => setIsCartOpen(false)}
-                          className="text-5xl hover:scale-110 transition-transform"
+                          className="flex-shrink-0 w-20 h-20 rounded-xl overflow-hidden bg-white/50 flex items-center justify-center hover:scale-110 transition-transform"
                         >
-                          {item.image}
+                          <img
+                            src={item.image}
+                            alt={item.name}
+                            className="w-full h-full object-contain p-2"
+                            onError={(e) => {
+                              e.target.style.display = 'none';
+                              e.target.nextSibling.style.display = 'flex';
+                            }}
+                          />
+                          <div className="text-4xl hidden items-center justify-center">{item.imageEmoji || '🧴'}</div>
                         </Link>
 
                         {/* Product Details */}

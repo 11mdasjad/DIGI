@@ -43,7 +43,7 @@ export const CartProvider = ({ children }) => {
 
     showNotification({
       type: 'success',
-      message: `${product.name} added to cart!`,
+      message: `Congrats! ${product.name} added to cart!`,
       product: product
     });
   };

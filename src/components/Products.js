@@ -32,10 +32,21 @@ const ProductCard = ({ product, index }) => {
       {/* Product Image */}
       <Link to={`/product/${product.id}`}>
         <motion.div
-          whileHover={{ scale: 1.05, rotateY: 10 }}
-          className="text-8xl mb-6 text-center cursor-pointer"
+          whileHover={{ scale: 1.05 }}
+          className="mb-6 text-center cursor-pointer overflow-hidden rounded-2xl bg-white/50 p-4"
         >
-          {product.image}
+          <div className="w-full h-64 flex items-center justify-center">
+            <img
+              src={product.image}
+              alt={product.name}
+              className="max-w-full max-h-full object-contain"
+              onError={(e) => {
+                e.target.style.display = 'none';
+                e.target.parentElement.querySelector('.emoji-fallback').style.display = 'flex';
+              }}
+            />
+            <div className="emoji-fallback hidden text-8xl items-center justify-center">{product.imageEmoji}</div>
+          </div>
         </motion.div>
       </Link>
 

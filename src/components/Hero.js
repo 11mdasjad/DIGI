@@ -123,7 +123,11 @@ const Hero = () => {
                 <div className="w-64 h-80 glass-card rounded-3xl p-8 gold-glow shadow-luxury-lg">
                   <div className="w-full h-full bg-gradient-to-br from-gold-400/20 to-peach-400/20 rounded-2xl flex items-center justify-center">
                     <div className="text-center">
-                      <div className="text-6xl mb-4">🧴</div>
+                      <img
+                        src="/images/hero-product.png"
+                        alt="Premium Floor Cleaner"
+                        className="w-40 h-40 object-contain mx-auto mb-4"
+                      />
                       <h3 className="text-xl font-bold text-gray-900 mb-2">Premium</h3>
                       <p className="text-gray-700 font-bold">Floor Cleaner</p>
                     </div>

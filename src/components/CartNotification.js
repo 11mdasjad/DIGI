@@ -35,9 +35,18 @@ const CartNotification = () => {
             <motion.div
               initial={{ scale: 0 }}
               animate={{ scale: 1 }}
-              className="text-6xl"
+              className="flex-shrink-0 w-16 h-16 rounded-xl overflow-hidden bg-white/50 flex items-center justify-center"
             >
-              {notification.product.image}
+              <img
+                src={notification.product.image}
+                alt={notification.product.name}
+                className="w-full h-full object-contain p-2"
+                onError={(e) => {
+                  e.target.style.display = 'none';
+                  e.target.nextSibling.style.display = 'flex';
+                }}
+              />
+              <div className="text-4xl hidden items-center justify-center">{notification.product.imageEmoji || '🧴'}</div>
             </motion.div>
           )}
           
@@ -46,11 +55,11 @@ const CartNotification = () => {
               <div className={`w-8 h-8 rounded-full bg-gradient-to-r ${colors[notification.type]} flex items-center justify-center`}>
                 <Icon className="w-4 h-4 text-white" />
               </div>
-              <p className="font-semibold text-gray-800">{notification.message}</p>
+              <p className="font-bold text-gray-800 text-lg">{notification.message}</p>
             </div>
             {notification.product && (
               <p className="text-sm text-gray-600 ml-10">
-                ₹{notification.product.price} • Added to cart
+                ₹{notification.product.price} • Successfully added
               </p>
             )}
           </div>
